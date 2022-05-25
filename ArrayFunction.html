@@ -1,0 +1,25 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        var colors = ["red", "blue", "green", "black"];
+        //colors.splice(3, 0, "white", "pink");
+        //const colorsCopy = colors.slice(2);
+        //const colorCopy = colors.slice(1, 3);
+       // colors.sort();
+        colors.reverse();
+        var data ="";
+
+        data = "<ol>";
+        for (let i = 0; i < colors.length; i++) {
+            data += "<li>" + colors[i] + "</li>";
+        }
+        data += "</ol>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = colors;
+    </script>
+</body>
+</html>

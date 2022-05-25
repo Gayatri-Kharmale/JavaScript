@@ -1,0 +1,60 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div id="d1"></div>
+    <p>
+        Enter your Email:<input type="email" id="Input2" />
+
+    </p>
+    <p>
+        Enter your Name:<input type="password" id="Input3" />
+
+    </p>
+    <p>
+        Enter your Password:<input type="password" id="Input4" />
+
+    </p>
+    <!--<p>
+        <input type="button" value="Login" onclick="display()" />
+    </p>-->
+    <p>
+        <input type="button" value="Login" onclick="validatePassword() " />
+    </p>
+    <!--<script>
+        function display() {-->
+    <!--//    let name = localStorage.getItem("username");
+    //    let pass = localStorage.getItem("password");
+    //    var t1 = document.getElementById("t1").value;
+    //    var t2 = document.getElementById("t2").value;
+    //    if (name == t1 && pass == t2) {
+    //        document.getElementById("d1").innerHTML = "";
+    //        alert("success");
+    //    }
+    //    else {
+    //        document.getElementById("d1").innerHTML = "user name or password are invalid";
+    //    }
+    //}-->
+
+    <script>
+        function validatePassword() {
+            var
+                email = document.getElementById("Inpu2").value;
+            var
+                pass = document.getElementById("Input3").value;
+            var
+                cpass = document.getElementById("Input4").value;
+            if (pass == cpass) {
+                document.getElementById("error").innerHTML = "";
+                localStorage.setItem("emailid", email);
+                localStorage.setItem("password", pass);
+                return true;
+            }
+            else {
+                document.getElementById("error").innerHTML = "Passworddoes not match";
+                return false;
+            }
+    </script>
+</body>
+</html>

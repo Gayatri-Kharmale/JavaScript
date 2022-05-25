@@ -1,0 +1,45 @@
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        var text = "Hello all sample msg to all";
+        var text2 = "Good Morning";
+        let res1 = text.slice(0,7);
+
+
+        text = text.replace(/all/g ,"everyone");
+        console.log(text);
+        
+        console.log(text.toUpperCase());
+        console.log(text.toLowerCase());
+        let a = text.charAt(13);
+        console.log(a);
+        var res = text.concat(text2);
+        console.log(res);
+        //console.log(text.length);
+
+
+        //substring()
+        var r1 = text.substring(1, 4); 
+        console.log(r1);
+        var r2 = text.substring(3);
+        console.log(r2);
+
+
+        //split function
+
+        var str = text.split(" ");
+        console.log(str);
+
+        var a = text.indexOf("a")
+        console.log(a);
+        console.log(text.lastIndexOf('a'));
+
+        //trim()
+        text =text.trim();
+        text =text.trim();
+    </script>
+</body>
+</html>
