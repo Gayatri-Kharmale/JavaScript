@@ -1,0 +1,39 @@
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        function multiply(a, b) {
+            return a * b;
+        }
+        var m = (a, b) => {
+            return a * b;
+        }
+        document.getElementById("d1").innerHTML = m(5, 5);
+        var str = () => {
+            var a, b;
+            return "hello to all";
+        }
+        //or
+        var str1 = () => "hello to all";
+
+        //or
+        str2 = (name) => "hello" + name;
+
+        //or
+        str3 = name => "hello" + name
+
+        //or
+        var emp = {
+            firstname: "vivek",
+            age=30,
+            details: () => {
+                return firstname + " " + age;
+            }
+        }
+        document.getElementById("d1").innerHTML = emp.details();
+    </script>
+
+</body>
+</html>
