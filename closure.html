@@ -1,0 +1,46 @@
+<html>
+<head></head>
+<body>
+    <input type="button" value="count" onclick="display()" />
+    <div id="d1"></div>
+    <script>
+        //function parent() {
+        //    var data; //create
+        //    let a;
+        //    function child() {
+        //        data; //use
+        //    }
+            
+        //}
+        //implement by using clouser function
+     
+
+        //function displaycount() {
+        //    let counter = 0;
+        //    function increment() {
+        //        counter++;
+        //        increment();//inner function 
+        //        return counter;
+        //    }
+
+        //}
+        const result = (
+            function () {
+                let counter = 0;
+                return function () {  //clousers
+                    counter++;
+                    return counter;
+                }
+            })();
+        
+
+        function display() {
+          
+
+            document.getElementById("d1").innerHTML = result();
+
+        }
+
+    </script>
+</body>
+</html>
